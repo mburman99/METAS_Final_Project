@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Display</title>
+    <link rel="stylesheet" href="style_patdis.css">
+</head>
+<div class="logo">
+    <h2>Hawaii Physical Therapy</h2>
+</div>
+<div class="topnav">
+    <a class='active' href="index.html">Log out</a> <!--Make this so that it logs them out 
+        and returns to index later-->
+    <a href="test.html">Home</a>
+    <a href="appointments.html">Appointments</a>
+    <a href="schedule.html">schedule</a>
+    <a href="patients.html">Patients</a>
+</div>
+<body>
+    <table width="100%" align="center">
+        <tr width="100%" align="center">
+            <th>Name</th>
+            <th>Ssn</th>
+            <th>Address</th>
+            <th>Gender</th>
+            <th>Insurance number</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>No Show (# times)</th>
+            <th>Last appointment</th>
+        </tr>
+        <tr width="100%" align="center">
+            <td>Bill Clark</td>
+            <td>----</td>
+            <td>2404 Maile Way, Honolulu, HI 96822</td>
+            <td>Male</td>
+            <td>----</td>
+            <td>808-112-3423</td>
+            <td>bill.clark@gmail.com</td>
+            <td>3</td>
+            <td>03/25/2022</td>
+        </tr>
+    </table>
+    <h4>Previous notes about patient</h4>
+    <table class="notes">
+        <tr>
+            <td>Missed appointment today 01/23/2022</td>
+        </tr>
+        <tr>
+            <td>Missed appointment 10/16/2021</td>
+        </tr>
+        <tr>
+            <td>Missed appointment 9/21/2021</td>
+        </tr>
+    </table>
+
+    <h4>Enter new notes here</h4>
+    <input style="width:100%; height:200px" type="text" name="patientnotes" id="p_notes" placeholder="Enter notes here...">
+</body>
+</html>

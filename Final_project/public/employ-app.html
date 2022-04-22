@@ -1,0 +1,93 @@
+<script>
+     function myFunction(){
+           //declare variables
+           var input, filter, table, tr, td, i, txtValue;
+           input = document.getElementById('myInput');
+           filter = input.value.toUpperCase();
+           table = document.getElementById('myApp');
+           tr = table.getElementsByTagName('tr');
+           // create a loop that looks throught the table rows
+           // and hides those that does not match
+           for(i=0; i < tr.length; i++) {
+               td = tr[i].getElementsByTagName('td')[0];
+               if(td){
+                   txtValue = td.textContent || td.innerText;
+                   if(txtValue.toUpperCase().indexOf(filter)>-1){
+                     tr[i].style.display = '';  
+                   } else {
+                       tr[i].style.display = 'none';
+                   }
+               }
+           }
+       }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_app.css">
+    <title>Appointments</title>
+</head>
+<div class="logo">
+    <h2>Hawaii Physical Therapy</h2>
+</div>
+<div class="topnav">
+    <a class='active' href="index.html">Log out</a> <!--Make this so that it logs them out 
+        and returns to index later-->
+    <a href="test.html">Home</a>
+    <a href="appointments.html">Appointments</a>
+    <a href="schedule.html">schedule</a>
+    <a href="patients.html">Patients</a>
+</div>
+<body>
+    <h3>Below are your appointments for the week</h3>
+    <h4>Click on a patient or injury to view more info about the specific patient/injury</h4>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for patient...">
+    <table align="Center" class="em_app" id="myApp">
+        <tr>
+            <th>Name</th>
+            <th>Injury</th>
+            <th>Phone</th>
+            <th>Day</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>Bill Clark</td>
+            <td>Left Ankle</td>
+            <td>808-112-3423</td>
+            <td>Monday</td>
+            <td>11:00-12:00</td>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>Neck</td>
+            <td>808-765-8877</td>
+            <td>Monday</td>
+            <td>02:00-03:00</td>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>Neck</td>
+            <td>808-765-8877</td>
+            <td>Wednesday</td>
+            <td>11:00-12:00</td>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>Neck</td>
+            <td>808-765-8877</td>
+            <td>Friday</td>
+            <td>12:00-01:00</td>
+        </tr>
+        <tr>
+            <td>Bill Clark</td>
+            <td>Left Ankle</td>
+            <td>808-112-3423</td>
+            <td>Friday</td>
+            <td>03:00-04:00</td>
+        </tr>
+    </table>
+</body>
+</html>

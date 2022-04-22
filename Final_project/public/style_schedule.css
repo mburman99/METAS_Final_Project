@@ -1,0 +1,70 @@
+/*Font for the page*/
+@import url('https://fonts.googleapis.com/css?family=Playfair Display');
+html * {
+    font-family: 'Playfair Display';
+    font-weight: 50;
+    font-weight: lighter;
+}
+/* for the navigation bar*/
+.topnav {
+    background-color: aliceblue;
+    overflow: hidden;
+}
+.topnav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+/* style for the navigation bar*/
+.topnav {
+    width:100%;
+    float:left;
+    color: #404040;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* hover over the navigation bar*/
+.topnav a:hover {
+    background-color: #F5F5F5;
+    color: #C8C8C8;
+    }
+
+/* for the top hawai'i physical therapy */
+.logo {
+    width:100%;
+    text-align: center;
+    background-color: #3c1414;
+    color: #F5F5F5;
+    padding: 10px 20px;
+    margin-top: 0;
+}
+.a-txt{
+    text-align: center;
+    padding-top:  30px;
+}
+table{
+  color: #4a4130;  
+}
+
+.avaliable{
+    background-color: #98ff98;
+}
+.meeting{
+    background-color: #eed202;
+}
+.closed{
+    background-color: #ff6347;
+    font-weight: bold;
+}
+.app{
+    background-color: #bcd4e6;
+}
+b{
+    font-weight: bold;
+}
+
+.out{
+    background-color: #877f7f;
+}

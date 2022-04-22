@@ -1,0 +1,205 @@
+<script>
+  function myFunction(){
+           //declare variables
+           var input, filter, table, tr, td, i, txtValue;
+           input = document.getElementById('myInput');
+           filter = input.value.toUpperCase();
+           table = document.getElementById('myApp');
+           tr = table.getElementsByTagName('tr');
+           // create a loop that looks throught the table rows
+           // and hides those that does not match
+           for(i=0; i < tr.length; i++) {
+               td = tr[i].getElementsByTagName('td')[0];
+               if(td){
+                   txtValue = td.textContent || td.innerText;
+                   if(txtValue.toUpperCase().indexOf(filter)>-1){
+                     tr[i].style.display = '';  
+                   } else {
+                       tr[i].style.display = 'none';
+                   }
+               }
+           }
+       }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="style_app.css">
+
+</head>
+<div class="logo">
+    <h2>Hawaii Physical Therapy</h2>
+</div>
+<div class="topnav">
+    <a class='active' href="index.html">Log out</a> <!--Make this so that it logs them out 
+        and returns to index later-->
+    <a href="test.html">Home</a>
+    <a href="appointments.html">Appointments</a>
+    <a href="schedule.html">schedule</a>
+    <a href="patients.html">Patients</a>
+</div>
+<body>
+    <h4>Below are the appointments of the week listed</h4>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for patient">
+    <!--change this so it can be searched for anything in the table, name, therapist, injury-->
+    <table align="center" id="myApp">
+        <tr>
+            <th>Name</th>
+            <th>Type of Injury</th>
+            <th>Physical Therapist</th>
+            <th>Patient phone number</th>
+            <th>Day</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>Marie Andersson</td>
+            <td>Hip</td>
+            <td>Kimberly Okaneku</td>
+            <td>808-224-8975</td>
+            <td>Monday</td>
+            <td>08:00-09:00</td>
+        </tr>
+        <tr>
+            <td>Claire Johnsson</td>
+            <td>Right Shoulder</td>
+            <td>Madisyn Sim</td>
+            <td>808-367-7788</td>
+            <td>Monday</td>
+            <td>10:00-11:00</td>
+        </tr>
+        <tr>
+            <td>Bill Clark</td>
+            <td>Left Ankle</td>
+            <td>Nicole Stauton</td>
+            <td>808-112-3423</td>
+            <td>Monday</td>
+            <td>11:00-12:00</td>
+        </tr>
+        <tr>
+            <td>Anton Williams</td>
+            <td>Lower Back</td>
+            <td>Karin Sasaki</td>
+            <td>808-228-7546</td>
+            <td>Monday</td>
+            <td>01:00-02:00</td>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>Neck</td>
+            <td>Nicole Stauton</td>
+            <td>808-765-8877</td>
+            <td>Monday</td>
+            <td>02:00-03:00</td>
+        </tr>
+        <tr>
+            <td>David Andersson</td>
+            <td>Left wrist and Elbow</td>
+            <td>Kehaulani Pakani-Tells</td>
+            <td>808-887-6725</td>
+            <td>Tuesday</td>
+            <td>09:00-10:00</td>
+        </tr>
+        <tr>
+           <td>Anton Williams</td>
+            <td>Lower Back</td>
+            <td>Karin Sasaki</td>
+            <td>808-228-7546</td>
+            <td>Wednesday</td>
+            <td>08:00-09:00</td>
+        </tr>
+        <tr>
+    <td>Marie Andersson</td>
+            <td>Hip</td>
+            <td>Kimberly Okaneku</td>
+            <td>808-224-8975</td>
+            <td>Wednesday</td>
+            <td>10:00-11:00</td>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>Neck</td>
+            <td>Nicole Stauton</td>
+            <td>808-765-8877</td>
+            <td>Wednesday</td>
+            <td>11:00-12:00</td>
+        </tr>
+        <tr>
+            <td>Claire Johnsson</td>
+            <td>Right Shoulder</td>
+            <td>Madisyn Sim</td>
+            <td>808-367-7788</td>
+            <td>Wednesday</td>
+            <td>01:00-02:00</td>
+        </tr>
+        <tr>
+           <td>David Andersson</td>
+            <td>Left wrist and Elbow</td>
+            <td>Kehaulani Pakani-Tells</td>
+            <td>808-887-6725</td>
+            <td>Thursday</td>
+            <td>09:00-10:00</td>
+        </tr>
+        <tr>
+            <td>Ken L</td>
+            <td>Left Shoulder</td>
+            <td>Kehaulani Pakani-Tells</td>
+            <td>970-8997-7865</td>
+            <td>Thursday</td>
+            <td>10:00-11:00</td>
+        </tr>
+        <tr>
+            <td>Marie Andersson</td>
+            <td>Hip</td>
+            <td>Kimberly Okaneku</td>
+            <td>808-224-8975</td>
+            <td>Friday</td>
+            <td>11:00-12:00</td>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>Neck</td>
+            <td>Nicole Stauton</td>
+            <td>808-765-8877</td>
+            <td>Friday</td>
+            <td>12:000-01:00</td>
+        </tr>
+        <tr>
+            <td>Claire Johnsson</td>
+            <td>Right Shoulder</td>
+            <td>Madisyn Sim</td>
+            <td>808-367-7788</td>
+            <td>Friday</td>
+            <td>02:00-03:00</td>
+        </tr>
+        <tr>
+            <td>Bill Clark</td>
+            <td>Left Ankle</td>
+            <td>Nicole Stauton</td>
+            <td>808-112-3423</td>
+            <td>Friday</td>
+            <td>03:00-04:00</td>
+        </tr>
+        <tr>
+            <td>Ken L</td>
+            <td>Left Shoulder</td>
+            <td>Kehaulani Pakani-Tells</td>
+            <td>970-8997-7865</td>
+            <td>Saturday</td>
+            <td>08:00-09:00</td>
+        </tr>
+        <tr>
+            <td>David Andersson</td>
+            <td>Left wrist and Elbow</td>
+            <td>Kehaulani Pakani-Tells</td>
+            <td>808-887-6725</td>
+            <td>Saturday</td>
+            <td>09:00-10:00</td>
+        </tr>
+    </table>
+</body>
+</html>

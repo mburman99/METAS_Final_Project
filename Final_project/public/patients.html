@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient informaiton</title>
+    <link rel="stylesheet" href="style_patients.css">
+</head>
+<div class="logo">
+    <h2>Hawaii Physical Therapy</h2>
+</div>
+<div class="topnav">
+    <a class='active' href="index.html">Log out</a> <!--Make this so that it logs them out 
+        and returns to index later-->
+    <a href="test.html">Home</a>
+    <a href="appointments.html">Appointments</a>
+    <a href="schedule.html">schedule</a>
+    <a href="patients.html">Patients</a>
+</div>
+<body>
+
+    Below is the non-sensitive patient info 
+    <!--Table without the sensitive informaiton for each patient-->
+   <script>
+       function myFunction(){
+           //declare variables
+           var input, filter, table, tr, td, i, txtValue;
+           input = document.getElementById('myInput');
+           filter = input.value.toUpperCase();
+           table = document.getElementById('pat-table');
+           tr = table.getElementsByTagName('tr');
+           // create a loop that looks throught the table rows
+           // and hides those that does not match
+           for(i=0; i < tr.length; i++) {
+               td = tr[i].getElementsByTagName('td')[0];
+               if(td){
+                   txtValue = td.textContent || td.innerText;
+                   if(txtValue.toUpperCase().indexOf(filter)>-1){
+                     tr[i].style.display = '';  
+                   } else {
+                       tr[i].style.display = 'none';
+                   }
+               }
+           }
+       }
+   </script>
+    <div>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for patient...">
+    <table id="pat-table">
+        <tr class="header">
+            <th align="center">First Name</th>
+            <th align="center"> Last Name</th>
+            <th align="center">Gender</th>
+            <th align="center">Phone</th>
+            <th align="center">Email</th>
+            <th align="center">Insurance Company</th>
+        </tr>
+        <tr>
+            <td align="center">Marie</td>
+            <td align="center">Andersson</td>
+            <td align="center">Female</td>
+            <td align="center">808-224-8975</td>
+            <td align="center">m.andersson@gmail.com</td>
+            <td align="center">AllState</td>
+        </tr>
+        <tr>
+            <td align="center">Bill</td>
+            <td align="center">Clark</td>
+            <td align="center">Male</td>
+            <td align="center">808-112-3423</td>
+            <td align="center">bill.clark@gmail.com</td>
+            <td align="center">HMSA</td>
+        </tr>
+        <tr>
+            <td align="center">Claire</td>
+            <td align="center">Johnsson</td>
+            <td align="center">Female</td>
+            <td align="center">808-367-7788</td>
+            <td align="center">claire247@gmail.com</td>
+            <td align="center">Tricare</td>  
+        </tr>
+        <tr>
+            <td align="center">Anton</td>
+            <td align="center">Williams</td>
+            <td align="center">Male</td>
+            <td align="center">808-228-7546</td>
+            <td align="center">a.will@hawaii.edu</td>
+            <td align="center">HMSA</td>
+        </tr>
+        <tr>
+            <td align="center">John</td>
+            <td align="center">Smith</td>
+            <td align="center">Male</td>
+            <td align="center">808-765-8877</td>
+            <td align="center">s.john@gmail.com</td>
+            <td align="center">AETNA</td>
+        </tr>
+        <tr>
+            <td align="center">David</td>
+            <td align="center">Andersson</td>
+            <td align="center"> Male</td>
+            <td align="center">808-887-6725</td>
+            <td align="center">d_andersson@hotmail.com</td>
+            <td align="center">HMA</td>
+        </tr>
+        <tr>
+            <td align="center">James</td>
+            <td align="center">Brown</td>
+            <td align="center">Male</td>
+            <td align="center">808-224-8867</td>
+            <td align="center">jbrown@yahoo.com</td>
+            <td align="center">StateFarm</td>
+        </tr>
+        <tr>
+            <td align="center">Mary</td>
+            <td align="center">Jones</td>
+            <td align="center">Female</td>
+            <td align="center">626-775-9952</td>
+            <td align="center">jones.m@yahoo.com</td>
+            <td align="center">Tricare</td>
+        </tr>
+        <tr>
+            <td align="center">Robert</td>
+            <td align="center">Miller</td>
+            <td align="center">Male</td>
+            <td align="center">707-154-4462</td>
+            <td align="center">mil.robert@hotmail.com</td>
+            <td align="center">HMAA</td>
+        </tr>
+        <tr>
+            <td align="center">Patricia</td>
+            <td align="center">Davis</td>
+            <td align="center">Female</td>
+            <td align="center">805-224-5546</td>
+            <td align="center">davis_p@yahoo.com</td>
+            <td align="center">UHC</td>
+        </tr>
+        <tr>
+            <td align="center">Anna</td>
+            <td align="center">Lopez</td>
+            <td align="center">Female</td>
+            <td align="center">719-332-8978</td>
+            <td align="center">alopez@hotmail.com</td>
+            <td align="center">HMSA</td>
+        </tr>
+        <tr>
+            <td align="center">Richard</td>
+            <td align="center">Thomas</td>
+            <td align="center">Male</td>
+            <td align="center">970-223-5645</td>
+            <td align="center">richard.t@gmail.com</td>
+            <td align="center">StateFarm</td>
+        </tr>
+        <tr>
+            <td align="center">Sarah</td>
+            <td align="center">Harris</td>
+            <td align="center">Female</td>
+            <td align="center">623-445-8778</td>
+            <td align="center">harris_sarrah@hotmail.com</td>
+            <td align="center">Medicare</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
