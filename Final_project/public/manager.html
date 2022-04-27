@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager view</title>
+    <link rel="stylesheet" href="style_patients.css">
+
+</head>
+<div class="logo">
+    <h2>Hawaii Physical Therapy</h2>
+</div>
+<div class="topnav">
+    <a class='active' href="index.html">Log out</a> <!--Make this so that it logs them out 
+        and returns to index later-->
+    <a href="test.html">Home</a>
+    <a href="appointments.html">Appointments</a>
+    <a href="schedule.html">schedule</a>
+    <a href="patients.html">Patients</a>
+</div>
+<body>
+    Click on the button to show all the patients
+    <form action="/process_query" method="POST">
+        <input type="submit" value="Submit">
+    </form>
+
+    Patient Progress
+    <form action="/process_query1" method="POST">
+        <input type="submit" value="submit">
+    </form>
+
+See the most most recent appointments for patients
+    <form action="/process_query3" method="POST">
+        <input type="submit" value="submit">
+    </form>
+
+
+    Check the prices and bills for the week
+    <form action="/process_query2" method="POST">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
