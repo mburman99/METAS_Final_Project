@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawai'i Physical Therapy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="logo">
+<h2>Hawaii Physical Therapy</h2>
+</div>
+<div class="topnav">
+    <a class='active' href="index.html">Log out</a><!--Make so this logs the employee out-->
+    <a href="home.html">Home</a>
+    <a href="report.html">Reports</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="treatment.html">Treatment</a>
+    <a href="patient.html">Patient Satisfaction</a>
+</div>
+<body class="schedule">
+    Add new patient
+    <div class='new_patient'>
+        <form action="/register_patient" method="POST">
+            <div>
+            <input type="number" id="Ssn" name="Ssn" placeholder="Enter Ssn">
+            </div>
+            <div>
+            <input type="date" id="Bdate" name="Bdate" placeholder="Ender Date">
+            </div>
+            <div>
+                <input type="text" id="Fname" name="Fname" placeholder="Enter First name">
+            </div>
+            <div>
+                <input type="text" id="Minit" name="Minit" placeholder="Enter Middle Initial">
+            </div>
+            <div>
+                <input type="text" id="Lname" name="Lname" placeholder="Enter Last name">
+            </div>
+            <div>
+                <input type="text" id="Address" name="Address" placeholder="Enter address">
+            </div>
+            <div>
+                <input type="text" id="Gender" name="Gender" placeholder="Enter M or F">
+            </div>
+            <div>
+                <input type="number" id="Inumber" name="Inumber" placeholder="Enter insurance number">
+            </div>
+            <div>
+                <input type="number" id="Phone" name="Phone" placeholder="Enter Phone number">
+            </div>
+            <div>
+                <input type="text" id="Email" name="Email" placeholder="Enter Email">
+            </div>
+            <input type="submit" value="submit">
+        </form>   
+    </div>
+    Add new appointment, for returning patient
+    <div class="new_appointment" >
+        <form action="/return_pat_book" method="post">
+            <div>
+                <input type="number" id="Pnum" name="Pnum" placeholder="Enter patient Ssn">
+            </div>
+            <div>
+                <input type="date" id="Date" name="Date" placeholder="Enter Date for appointment">
+            </div>
+            <div>
+                <input type="number" id="Cost" name="Cost" placeholder="Enter Cost of Appointment">
+            </div>
+            <div>
+                <input type="number" id="Employee_number" name="Employee_number" placeholder="Enter Employee number">
+            </div>
+            <div>
+                <input type="number" id="Inum" name="Inum" placeholder="Enter Insurance number">
+            </div>
+            <div>
+                <input type="number" id="Anum" name="Anum" placeholder="Enter Appointment number">
+            </div>
+            <div>
+                <input type="number" id="Anumber" name="Anumber" placeholder="Confirm Appointment number">
+            </div>
+            <div>
+                <input type="number" id="P_ssn" name="P_ssn" placeholder="Confirm Patient Ssn">
+            </div>
+            <div>
+                <input type="number" id="Employee_num" name="Employee_num" placeholder="Confirm employee number">
+            </div>
+            <div>
+                <input type="datetime-local" id="Date_time" name="Date_time" placeholder="Confirm Date and time for appointment">
+            </div>
+            <input type="submit" value="submit">
+        </form>
+    </div >
+</div>
+    <div>
+        <br>Select date and send forms to patient before appointment
+       <br> <input type="date">
+       <button onclick="alert('Email regarding forms sent to patients')">Send Email</button>
+    </div>
+</body>
+</html>

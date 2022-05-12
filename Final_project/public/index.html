@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hawai'i Physical Therapy</title>
-    <link rel="stylesheet" href="style_service.css">
+    <link rel="stylesheet" href="style_employee.css">
 </head>
 <div class="logo">
 <h2>Hawaii Physical Therapy</h2>
@@ -17,24 +17,33 @@
     <a href="contact.html">Contact</a>
     <a href="employee.html">Employee</a>
 </div>
-<div class="service_top">
-<h1>Our Key Services</h1>
-<h3>Excellence in Patient Care</h3>
-</div>
 <body>
-<table width="100%">
-    <tr>
-        <td><img src="/images/ortho.jpg"></td>
-        <td><h2>Orthopedic Therapy</h2></td>
-        <td><img src="/images/post.jpg"></td>
-        <td><h2>Post Rehab Programs</h2></td>
-    </tr>
-    <tr>
-        <td><h2>Wellness & Fitness</h2></td>
-        <td><img src="/images/wellness.jpg"></td>
-        <td><h2>Massage Therapy</h2></td>
-        <td><img src="/images/massage.jpg"></td>
-    </tr>
-</table>
+<!--look at online for an example of a template how to do 
+and add the login to the server later so it verifies the login-->
+<h2>Employees Please log in</h2>
+<!--<form action="login" method="post"> need to make this work-->
+   <!-- <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+  -->
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" > <!--add required inside-->
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" ><!--add required iniside-->
+  
+      <button onclick="window.location.href='test.html'">login</button> 
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+  
 </body>
 </html>

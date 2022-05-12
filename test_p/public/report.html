@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawai'i Physical Therapy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="logo">
+<h2>Hawaii Physical Therapy</h2>
+</div>
+<div class="topnav">
+    <a class='active' href="index.html">Log out</a><!--Make so this logs the employee out-->
+    <a href="home.html">Home</a>
+    <a href="report.html">Reports</a> <!--Only avaiable for managers-->
+    <a href="schedule.html">Schedule</a>
+    <a href="treatment.html">Treatment</a>
+    <a href="patient.html">Patient Satisfaction</a>
+</div>
+<body>
+    <table class='sales' style="width: 100%; text-align: center; padding-top: 50px;">
+        <tr>
+            <td>
+               <h3>Sales</h3> 
+            </td>
+            <td>
+                <h3>Appointments</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="/process_sales_week" method="POST">
+                    <input type="submit" value="Weekly sales">
+                </form>
+            </td>
+            <td>    
+                <form action="/process_app_week" method="POST">
+                <input type="submit" value="Weekly appointments appointments">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="/process_sales_month" method="POST">
+                <input type="submit" value="Monthly Sales">
+            </form>
+            </td>
+            <td>    
+                <form action="/process_app_month" method="POST">
+                <input type="submit" value="Monthly appointments">
+                </form>
+            </td>
+        </tr>
+    </table>
+    <table class='lastv' style="width: 100%; text-align: center;">
+        <form action="/process_lastapp" method="POST">
+            <table class="last_visit" style="width: 100%; text-align: center; padding-top: 30px;">
+                <tr>
+                    <td>
+                        <h3>Last Visit</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="First Name"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="Submit" value="Select Patient">
+                    </form>
+                    </td>
+                </tr>
+    </table>
+    <table class="trends" style="width: 100%; text-align: center; padding-top: 30px; ">
+        <tr>
+            <td>
+               <h3>No Show</h3> 
+            </td>
+            <td>
+               <h3> Appointments per employee for the month</h3>
+            </td>
+            <td>
+               <h3> Injury Trends</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="/process_noshow" method="POST">
+                    <input type="submit" value="No-shows">
+                </form>
+            </td>
+            <td>
+                <form action="/process_app_per_employee" method="POST">
+                    <input type="submit" value="See appointments">
+                </form>
+            </td>
+            <td>
+                <form action="/process_itrend" method="POST">
+                    <input type="submit" value="Show trends">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

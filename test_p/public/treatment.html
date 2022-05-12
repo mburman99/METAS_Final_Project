@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawai'i Physical Therapy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="logo">
+<h2>Hawaii Physical Therapy</h2>
+</div>
+<div class="topnav">
+    <a class='active' href="index.html">Log out</a><!--Make so this logs the employee out-->
+    <a href="home.html">Home</a>
+    <a href="report.html">Reports</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="treatment.html">Treatment</a>
+    <a href="patient.html">Patient Satisfaction</a>
+</div>
+<body>
+    <div class="imgcontainer">
+        <img src="/images/logo.jpg" alt="Avatar" class="avatar">
+      </div><br>
+    <div class="h4txt">
+        <h3 style="text-align:center">Please select a patient to see patient progress</h3>
+    </div> 
+    <div class="sel_pat">
+        <div style="margin-top: 200 px; padding-bottom: 25px;">
+            <input style="height: 50px;" type="text" placeholder="First name">
+        </div>
+        <div style="padding-top: 25 px; padding-bottom: 20px;">
+            <input style="height: 50px;" type="text" placeholder="Last name">
+        </div>
+        <div>
+    <div><form action="process_progress" method="POST">
+        <input type="submit" value="Select Patient">
+    </form>
+    </div>
+</div>
+
+</body>
+</html>

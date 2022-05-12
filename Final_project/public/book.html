@@ -22,121 +22,61 @@
 <body>
             <h2>Please select an avaliable time slot to book an appointment</h2>
             <h3>If your situation is life-threatening, please call 911</h3>
-            <table border="5" cellspacning="0" align="center">
-                <tr>
-                    <td align="center" height="50" width="100"><br>
-                    <b>Day/Time</b></br>
-                    </td>
-                    <td align="center" height="50" width="100">
-                        <b>8:00-9:00</b>
-                    </td>
-                    <td align="center" height="50" 
-                    width="100">
-                    <b>9:00 - 10:00</b>
-                </td>
-                <td align="center" height="50" 
-                    width="100">
-                    <b>10:00-11:00</b>
-                </td>
-                <td align="center" height="50" 
-                    width="100">
-                    <b>11:00-12:00</b>
-                </td>
-                <td align="center" height="50" 
-                            width="100">
-                            <b>12:00-01:00</b>
-                        </td>
-                        <td align="center" height="50" 
-                            width="100">
-                            <b>01:00-2:00</b>
-                        </td>
-                        <td align="center" height="50" 
-                            width="100">
-                            <b>2:00-3:00</b>
-                        </td>
-                        <td align="center" height="50" 
-                            width="100">
-                            <b>3:00-4:00</b>
-                        </td>
-                        <td align="center" height="50" 
-                            width="100">
-                            <b>4:00-5:00</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center" height="50">
-                            <b>Monday</b></td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="avaliable" >Avaliable</td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                    </tr>
-                    <tr>
-                        <td align="center" height="50">
-                            <b>Tuesday</b>
-                        </td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                        <td colspan="5" align="center" height="50" class="closed">Closed</td>
-                    </tr>
-                    <tr>
-                        <td align="center" height="50">
-                            <b>Wednesday</b>
-                        </td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                        <td align="center" height="50" class="meeting" colspan="2">Unavaliable</td>
-                    </tr>
-                    <tr>
-                        <td align="center" height="50">
-                            <b>Thursday</b>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                        <td colspan="5" align="center" height="50" class="closed">Closed</td>
-                    </tr>
-                    <tr>
-                        <td align="center" height="50">
-                            <b>Friday</b>
-                        </td>
-                        <td colspan="3" align="center" height="50" class="meeting"> Unavaliable</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                    </tr>
-                    <tr>
-                        <td align="center" height="50">
-                            <b>Saturday</b>
-                        </td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="app">Booked</td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                        <td align="center" height="50" class="avaliable">Avaliable</td>
-                        <td colspan="5" align="center" height="50" class="closed">Closed</td>
-                    </tr>
-                    <tr>
-                        <td align="center" height="50">
-                            <b>Sunday</b>
-                        </td>
-                        <td colspan="9" align="center" height="50" class="closed">Closed</td>
-                    </tr>
-            </table>
-    </div>
+            New patients insert info here
+
+    <form action="/register_patient" method="POST">
+        <div>
+        <input type="number" id="Ssn" name="Ssn" placeholder="Enter Ssn">
+        </div>
+        <div>
+        <input type="date" id="Bdate" name="Bdate" placeholder="Ender Date">
+        </div>
+        <div>
+            <input type="text" id="Fname" name="Fname" placeholder="Enter First name">
+        </div>
+        <div>
+            <input type="text" id="Minit" name="Minit" placeholder="Enter Middle Initial">
+        </div>
+        <div>
+            <input type="text" id="Lname" name="Lname" placeholder="Enter Last name">
+        </div>
+        <div>
+            <input type="text" id="Address" name="Address" placeholder="Enter address">
+        </div>
+        <div>
+            <input type="text" id="Gender" name="Gender" placeholder="Enter M or F">
+        </div>
+        <div>
+            <input type="number" id="Inumber" name="Inumber" placeholder="Enter insurance number">
+        </div>
+        <div>
+            <input type="number" id="Phone" name="Phone" placeholder="Enter Phone number">
+        </div>
+        <div>
+            <input type="text" id="Email" name="Email" placeholder="Enter Email">
+        </div>
+        <div> 
+            <input type="number" id="I_number" name="I_number" placeholder="Confirm Insurance number">
+        </div>
+        <div>
+            <input type="text" id="Name" name="Name" placeholder="Enter Name of insurance">
+        </div>
+        <div>
+            <input type="text" id="I_address" name="I_address" placeholder="Insurance company address">
+        </div>
+        <div>
+            <input type="number" id="Pssn" name="Pssn" placeholder="Confirm Ssn">
+        </div>
+        <div>
+            <input type="text" id="Part_of_body" name="Part_of_body" placeholder="Part of Body">
+        </div>
+        <div>
+            <input type="Date" id="Start_date" name="Start_date" placeholder="Start Date of Injury">
+        </div>
+        <div>
+            <input type="text" id="TYPE" name="TYPE" placeholder="Acute or Chronic">
+        </div>-->
+        <input type="submit" value="submit">   
+    </form>
 </body>
 </html>

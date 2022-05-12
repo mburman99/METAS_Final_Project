@@ -1,0 +1,141 @@
+/*Font for the page*/
+@import url('https://fonts.googleapis.com/css?family=Playfair Display');
+html * {
+    font-family: 'Playfair Display';
+    font-weight: 50;
+    font-weight: lighter;
+}
+/* for the navigation bar*/
+.topnav {
+    background-color: aliceblue;
+    overflow: hidden;
+}
+.topnav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+/* style for the navigation bar*/
+.topnav {
+    width:100%;
+    float:left;
+    color: #404040;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+/* hover over the navigation bar*/
+.topnav a:hover {
+background-color: #F5F5F5;
+color: #C8C8C8;
+}
+
+
+/* for the top hawai'i physical therapy */
+.logo {
+    width:100%;
+    text-align: center;
+    background-color: #3c1414;
+    color: #F5F5F5;
+    padding: 10px 20px;
+    margin-top: 0;
+}
+/*for the schedule page*/
+.schedule{
+    text-align: center;
+}
+.new_appointment{
+    display: flex;
+    justify-content: center;
+}
+.new_patient{
+    display: flex;
+    justify-content: center;
+}
+.display_appt{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    position: relative;
+}
+.text{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #404040;
+    color: #F5F5F5;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sel_pat{
+text-align: center;
+}
+
+/*for image and login page*/
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password], input[type=number],input[type=Date],input[type=Datetime-local], input[type=submit] {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #268fd0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 250px;
+    display: inline-block;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
